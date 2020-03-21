@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TranslucentStatusBarAppbarLayoutStyle" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:layout_marginTop">-24dp</item>
+    </style>
+
+    <style name="NonEditableTextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+
+</resources>

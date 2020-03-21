@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_frame_map">24dp</dimen>
+    <dimen name="default_padding">24dp</dimen>
+    <dimen name="default_separation">12dp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MeepTechnicalTest</string>
+    <string name="error_message">Oops :( , we are sorry but there was an error</string>
+    <string name="color_id">Color id</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+</resources>

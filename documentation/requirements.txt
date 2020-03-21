@@ -1,0 +1,31 @@
+Realizar una aplicación Android nativa que llame al siguiente endpoint:
+
+curl -X GET "https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources?lowerLeftLatLon=38.711046,-9.160096&upperRightLatLon=38.739429,-9.137115" -H "accept: application/json"
+
+Esta llamada sirve para obtener los recursos (moto, bicis, paradas de bus, metro, etc.) disponibles dado un "marco" (lowerLeftLatLon=38.711046,-9.160096&upperRightLatLon=38.739429,-9.137115) y una zona (lisboa). Una vez realizada la llamada, se deben mostrar sobre el mapa los diferentes recursos utilizando Google Maps. No necesitamos que sea nada sofisticado a nivel de UX.
+
+¿Qué nos gustaría ver?
+
+Arquitectura
+
+Llamada al endpoint
+
+Mostrar markers sobre el mapa con la librería de Google Maps. Identificar los diferentes recursos por color según el companyZoneId
+
+Mostrar en una nueva vista información sobre el marker
+
+Extra: si el usuario se mueve por el mapa, refrescar los puntos
+
+-------------------------------------------------------------------------
+The negative feedback about some recent tasks is: (various tasks, to give you more idea on what they focus with checking it)
+
+No arquitectura (Servicios en los presenter). Tiene un UseCase que devuelve el Servicio de retrofit
+La primera vez que la he ejecutado ha crasheado, el resto se queda siempre con la animación de loading
+Los markers no me aparecen por ningún sitio
+No tiene pinta de controlar MVVM
+RetrofitClient en el ViewModel
+No Inyección de dependencias
+No repository pattern
+No abstracciones
+Test que fallan
+Pone en presentation/data todo lo que podría ir en data normal

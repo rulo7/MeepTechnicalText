@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppThemeOverlay" parent="AppTheme" />
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="appBarLayoutStyle">@style/TranslucentStatusBarAppbarLayoutStyle</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Primary</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox
+        </item>
+    </style>
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--colors-->
+        <item name="colorPrimary">#FB8C00</item>
+        <item name="colorOnPrimary">#F2F2F2</item>
+        <item name="colorSecondary">#FFB300</item>
+        <item name="colorOnSecondary">#F2F2F2</item>
+        <item name="colorSurface">#F2F2F2</item>
+        <item name="colorOnSurface">#C7C7C7</item>
+        <item name="android:colorBackground">#424242</item>
+    </style>
+
+</resources>
